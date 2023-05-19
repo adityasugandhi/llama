@@ -83,7 +83,7 @@ def main(
             break
 
         results = generator.generate(
-            [prompt], max_gen_len=256, temperature=temperature, top_p=top_p
+            [prompt.split()], max_gen_len=256, temperature=temperature, top_p=top_p
         )
 
         for result in results:
